@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Linear Regression</title>
+</head>
+<body>
+    <h2>Enter Input Features</h2>
+    <form action="/predict" method="post">
+        <input type="number" name="feature1" placeholder="Feature 1" step="any" required><br><br>
+        <input type="number" name="feature2" placeholder="Feature 2" step="any" required><br><br>
+        <!-- Add more input fields based on your model -->
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
